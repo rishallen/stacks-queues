@@ -21,7 +21,7 @@ class Hire
   end
 
   # random method that will take the number and subtract from the @workers array
-    def fire
+    def fire_rehire
       num = rand(1..10)
       num.times do
         a = @workers.store.last
@@ -29,6 +29,7 @@ class Hire
         @waiting.new_employees(a)
       end
     end
+
 
 end
 
